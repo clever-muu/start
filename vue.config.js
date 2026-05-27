@@ -5,6 +5,8 @@ const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  publicPath: '/start/' ,// 这里要和你的仓库名一致，你的仓库是 "start"
+
   configureWebpack: {
     plugins: [
       AutoImport({
